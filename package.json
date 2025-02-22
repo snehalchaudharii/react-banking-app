@@ -2,6 +2,7 @@
   "name": "exercise",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://snehalchaudharii.github.io/react-banking-app",
   "engines": {
     "node": "10.3.0"
   },
@@ -26,8 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:coverage": "npm run test -- --coverage --watchAll=false",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +48,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.2",
-    "@testing-library/react": "^10.4.8"
+    "@testing-library/react": "^10.4.8",
+    "gh-pages": "^6.3.0"
   }
 }
